@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
           <span className="font-semibold font-serif text-xs">&copy;</span>{" "}
-          <span className="text-color-1 font-medium">Brainwave</span>{" "}
-          {new Date().getFullYear()}. All rights reserved.
+          <span className="text-color-1 font-medium">Renda Fácil</span>{" "}
+          {new Date().getFullYear()}. Todos os direitos reservados.
         </p>
 
         <ul className="flex gap-5 flex-wrap">

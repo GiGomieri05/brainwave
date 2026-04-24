@@ -8,25 +8,12 @@ import { curve } from "../assets";
 
 const Benefits = () => {
   return (
-    <Section id="features">
+    <Section id="beneficios">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title={
-            <>
-              Chat Smarter, Not Harder with{" "}
-              <span className="inline-block relative font-semibold">
-                Brainwave
-                <img
-                  src={curve}
-                  className="absolute top-full left-0 w-full xl:-mt-2 pointer-events-none select-none"
-                  width={624}
-                  height={28}
-                  alt="Curve"
-                />
-              </span>
-            </>
-          }
+          title="O que você ganha com o Renda Fácil"
+          text="Ferramentas práticas para quem quer ter mais controle, mais clareza e mais tranquilidade na vida financeira."
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
@@ -50,7 +37,7 @@ const Benefits = () => {
                   />
 
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    Explore more
+                    Saiba mais
                   </p>
                   <Arrow />
                 </div>

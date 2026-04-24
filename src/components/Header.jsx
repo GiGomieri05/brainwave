@@ -2,9 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import { brainwave } from "../assets";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { links } from "../config";
 import { navigation } from "../constants";
 import Button from "./Button";
 import { HambugerMenu } from "./design/Header";
@@ -37,14 +35,10 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img
-            src={brainwave}
-            width={190}
-            height={40}
-            alt="Brainwave"
-            className="pointer-events-none select-none"
-          />
+        <a className="block xl:mr-8" href="#hero">
+          <span className="text-2xl font-bold text-color-1">
+            Renda<span className="text-color-3">Fácil</span>
+          </span>
         </a>
 
         <nav
@@ -57,12 +51,8 @@ const Header = () => {
               <a
                 key={item.id}
                 href={item.url}
-                target={item.external ? "_blank" : "_self"}
-                rel={item.external && "noreferrer noopener"}
                 onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
-                  item.onlyMobile && "lg:hidden"
-                } px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold ${
+                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold ${
                   item.url === pathname.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
@@ -76,8 +66,8 @@ const Header = () => {
           <HambugerMenu />
         </nav>
 
-        <Button className="hidden lg:flex" href={links.sourceCode} external>
-          Source Code
+        <Button className="hidden lg:flex" href="#como-funciona">
+          Começar agora
         </Button>
 
         <Button
