@@ -55,7 +55,9 @@ brainwave/
       |--- Benefits.jsx
       |--- Button.jsx
       |--- Collaboration.jsx
+      |--- ComoFunciona.jsx
       |--- CompanyLogos.jsx
+      |--- CTAFinal.jsx
       |--- Footer.jsx
       |--- Generating.jsx
       |--- Header.jsx
@@ -64,9 +66,11 @@ brainwave/
       |--- Notification.jsx
       |--- Pricing.jsx
       |--- PricingList.jsx
+      |--- Problema.jsx
       |--- Roadmap.jsx
       |--- Section.jsx
       |--- Services.jsx
+      |--- Solucao.jsx
       |--- Tagline.jsx
     |-- config/
       |--- index.js
